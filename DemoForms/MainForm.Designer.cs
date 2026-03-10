@@ -1,6 +1,6 @@
 ﻿namespace DemoForms
 {
-    partial class LoginForm
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,34 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.tovarCard1 = new DemoForms.TovarCard();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // tovarCard1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(221, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Авторизация";
+            this.tovarCard1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tovarCard1.Location = new System.Drawing.Point(3, 3);
+            this.tovarCard1.Name = "tovarCard1";
+            this.tovarCard1.Size = new System.Drawing.Size(739, 252);
+            this.tovarCard1.TabIndex = 0;
             // 
-            // LoginForm
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.tovarCard1);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(265, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(934, 426);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 450);
-            this.Controls.Add(this.label1);
-            this.Name = "LoginForm";
+            this.ClientSize = new System.Drawing.Size(1211, 450);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Name = "MainForm";
             this.Text = "Form1";
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private TovarCard tovarCard1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
